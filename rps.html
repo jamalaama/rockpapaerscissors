@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rock Paper Scissors</title>
+        <link href="rps.css" rel="stylesheet">
+        <script src="rpsf.js" defer></script>
+    </head>
+
+    <body>
+    
+        <h1>Rock Paper Scissors!</h1>
+        <h2>Make your selection...</h2>
+
+        <div class="selection">
+            <div class="rock">
+                <img src="rock.jpg" value = "rock" onclick="playRound('rock')">
+                <div class="r_text">Rock</div>
+            </div>
+
+            <div class="paper">
+                <img src="paper.jpg" value = "paper" onclick="playRound('paper')">
+                <div class="p_text">Paper</div>
+            </div>
+
+            <div class="scissors">
+                <img src="scissors.jpg" value = "scissors" onclick="playRound('scissors')">
+                <div class="s_text">Scissors</div>
+            </div>
+        </div>
+
+        <div class="result">
+            Round Result:
+            <br><em id="result"></em></p>
+        </div>
+
+            <div>
+                Score:
+                <div class="points">
+                        <div class="score">
+                            Player: <em id="playerScore"></em>
+                        </div>
+
+                        <div class="score">
+                            Computer: <em id="computerScore"></em>
+                        </div>  
+                </div>
+            </div>
+    
+    </body>
+</html>
